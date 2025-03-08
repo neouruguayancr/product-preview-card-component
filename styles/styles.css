@@ -36,7 +36,6 @@ footer {
 
 .product-container {
   background-color: var(--White);
-  width: auto;
   height: 450px;
   border-radius: 10px;
   display: flex;
@@ -46,21 +45,22 @@ footer {
   gap: 28px;
 }
 
+.product-image {
+  height: 100%;
+}
+
 .product-image img {
   width: 300px;
-  height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
 
 .product-details {
-  padding-top: 30px;
-  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 5px;
+  gap: 2px;
   margin-right: 28px;
+  margin-left: 20px;
   height: auto;
 }
 
@@ -75,6 +75,7 @@ footer {
 .product-details h1 {
   color: var(--Black);
   font-family: "Fraunces", sans-serif;
+  margin-bottom: 10px;
 }
 
 .product-details p {
@@ -82,13 +83,14 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .product-details .product-price {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .product-details .product-price h1 {
@@ -106,7 +108,7 @@ footer {
   align-items: center;
   justify-content: center;
   background-color: var(--Green500);
-  width: 90%;
+  width: 80%;
   height: 20px;
   border-radius: 10px;
   padding: 1rem;
@@ -118,6 +120,13 @@ footer {
 
 .product-details .cart p {
   color: var(--White);
+  font-weight: bold;
+  margin: 0;
+}
+
+.product-details .cart svg {
+  height: auto;
+  width: auto;
 }
 
 .product-details .cart:hover {
@@ -131,3 +140,5 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
