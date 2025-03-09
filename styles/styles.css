@@ -1,7 +1,7 @@
 html,
 body {
-  height: 100%; /* Asegúrate de que el cuerpo ocupe toda la altura de la pantalla */
-  margin: 0; /* Elimina los márgenes predeterminados */
+  height: 100%;
+  margin: 0;
 }
 
 :root {
@@ -141,4 +141,38 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
+@media screen and (max-width: 648px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
 
+  .product-container {
+    width: 90%;
+    max-width: 375px;
+    height: 300px;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .product-image img {
+    width: 200px;
+    min-height: 100%;
+  }
+
+  .product-details h1 {
+    font-size: 14px;
+  }
+  .product-details h3 {
+    font-size: 9px;
+  }
+  .product-details p {
+    font-size: 6px;
+  }
+  .product-details .cart {
+    width: 80px;
+    height: 20px;
+  }
+}
